@@ -1,0 +1,61 @@
+{
+  "name": "welopc-aihot-skills",
+  "owner": {
+    "name": "WelOPC",
+    "url": "https://welopc.com"
+  },
+  "metadata": {
+    "description": "Agent Skills for WelOPC AIHOT realtime AI intelligence, trend judgment, content topics, reports, and coding-agent ecosystem monitoring.",
+    "version": "0.1.0"
+  },
+  "keywords": [
+    "aihot",
+    "ai-news",
+    "agent-skills",
+    "coding-agent",
+    "mcp",
+    "trend-intelligence",
+    "welopc"
+  ],
+  "skills": [
+    {
+      "name": "welopc-aihot",
+      "source": "./skills/welopc-aihot",
+      "description": "Use WelOPC AIHOT as an agent-accessible AI content capability source for signals, trends, topics, reports, and cited AI intelligence.",
+      "version": "0.1.0",
+      "homepage": "https://welopc.com/ai-hot/agent/",
+      "repository": "https://github.com/welopc/aihot-skills",
+      "license": "MIT",
+      "category": "ai-intelligence",
+      "keywords": [
+        "ai-news",
+        "ai-signals",
+        "trend-radar",
+        "coding-agent",
+        "mcp",
+        "content-intelligence"
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "name": "welopc-aihot",
+      "source": "./skills/welopc-aihot",
+      "description": "Use WelOPC AIHOT as an agent-accessible AI content capability source for signals, trends, topics, reports, and cited AI intelligence.",
+      "version": "0.1.0",
+      "homepage": "https://welopc.com/ai-hot/agent/",
+      "repository": "https://github.com/welopc/aihot-skills",
+      "license": "MIT",
+      "category": "ai-intelligence",
+      "keywords": [
+        "ai-news",
+        "ai-signals",
+        "trend-radar",
+        "coding-agent",
+        "mcp",
+        "content-intelligence"
+      ],
+      "strict": true
+    }
+  ]
+}

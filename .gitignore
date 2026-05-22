@@ -1,0 +1,35 @@
+.DS_Store
+Thumbs.db
+
+# Local environments and dependencies
+.env
+.env.*
+!.env.example
+**/.venv/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime data and credentials
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*credentials*
+*secret*
+*cookie*
+*token*
+app/auth/
+runtime/
+backups/
+logs/
+
+# Generated local output
+*.log
+app/data/raw/
+app/data/normalized/
+app/data/enriched/
+app/reports/generated/
+dist/
+build/

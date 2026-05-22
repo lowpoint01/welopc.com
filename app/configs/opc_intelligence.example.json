@@ -1,0 +1,441 @@
+{
+  "workspace_name": "WelOPC AI Signal Radar",
+  "parent_folder_token": "",
+  "projects": {
+    "enterprise_ai_service": {
+      "folder_name": "01 Enterprise AI Service Research"
+    },
+    "pr_radar": {
+      "folder_name": "02 OpenClaw PR Radar",
+      "repo_slugs": [
+        "openclaw/openclaw"
+      ],
+      "daily_title_template": "OpenClaw PR 雷达 - {date}"
+    },
+    "ai_daily_signal": {
+      "folder_name": "03 AI Daily Signal",
+      "daily_title_template": "AI 每日信号 - {date}",
+      "official_feeds": [
+        {
+          "name": "OpenAI News",
+          "category": "official",
+          "url": "https://openai.com/news/rss.xml",
+          "source_kind": "official_feed"
+        },
+        {
+          "name": "OpenAI Blog",
+          "category": "official",
+          "url": "https://openai.com/blog/rss.xml",
+          "source_kind": "official_feed"
+        },
+        {
+          "name": "Google AI Blog",
+          "category": "official",
+          "url": "https://blog.google/technology/ai/rss/",
+          "source_kind": "official_feed"
+        },
+        {
+          "name": "Google DeepMind Blog",
+          "category": "official",
+          "url": "https://deepmind.google/blog/rss.xml",
+          "source_kind": "official_feed"
+        },
+        {
+          "name": "Hugging Face Blog",
+          "category": "official",
+          "url": "https://huggingface.co/blog/feed.xml",
+          "source_kind": "official_feed"
+        },
+        {
+          "name": "Anthropic Newsroom",
+          "category": "official",
+          "url": "https://www.anthropic.com/news",
+          "source_kind": "official_web"
+        },
+        {
+          "name": "DeepSeek",
+          "category": "official",
+          "url": "https://www.deepseek.com/",
+          "source_kind": "official_web",
+          "text_patterns": [
+            "deepseek-v4",
+            "deepseek v4"
+          ],
+          "emit_page_probe": true,
+          "page_probe_title": "DeepSeek-V4"
+        },
+        {
+          "name": "Qwen / Hugging Face",
+          "category": "official",
+          "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+          "source_kind": "official_web",
+          "page_probe_only": true,
+          "text_patterns": [
+            "qwen3.6-27b",
+            "flagship-level coding",
+            "agentic coding"
+          ],
+          "emit_page_probe": true,
+          "page_probe_title": "Qwen3.6-27B"
+        },
+        {
+          "name": "Tencent HY",
+          "category": "official",
+          "url": "https://cloud.tencent.com/product/hunyuan?Is=home",
+          "source_kind": "official_web",
+          "page_probe_only": true,
+          "text_patterns": [
+            "hy3 preview",
+            "tencent hy3",
+            "hunyuan hy3",
+            "hunyuan"
+          ],
+          "emit_page_probe": true,
+          "page_probe_title": "Tencent Hy3 preview"
+        }
+      ],
+      "community_feeds": [
+        {
+          "name": "Reddit / r/LocalLLaMA",
+          "category": "reddit",
+          "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
+          "source_kind": "community_feed"
+        },
+        {
+          "name": "Reddit / r/MachineLearning",
+          "category": "reddit",
+          "url": "https://www.reddit.com/r/MachineLearning/.rss",
+          "source_kind": "community_feed"
+        },
+        {
+          "name": "Reddit / r/OpenAI",
+          "category": "reddit",
+          "url": "https://www.reddit.com/r/OpenAI/.rss",
+          "source_kind": "community_feed"
+        },
+        {
+          "name": "Reddit / r/Anthropic",
+          "category": "reddit",
+          "url": "https://www.reddit.com/r/Anthropic/.rss",
+          "source_kind": "community_feed"
+        },
+        {
+          "name": "Reddit / r/artificial",
+          "category": "reddit",
+          "url": "https://www.reddit.com/r/artificial/.rss",
+          "source_kind": "community_feed"
+        },
+        {
+          "name": "arXiv cs.AI",
+          "category": "paper",
+          "url": "https://export.arxiv.org/rss/cs.AI",
+          "source_kind": "community_feed"
+        }
+      ],
+      "feeds": [],
+      "youtube_channels": [
+        {
+          "name": "OpenAI",
+          "category": "youtube",
+          "url": "https://www.youtube.com/@OpenAI",
+          "source_kind": "youtube_channel"
+        },
+        {
+          "name": "Anthropic",
+          "category": "youtube",
+          "url": "https://www.youtube.com/@Anthropic",
+          "source_kind": "youtube_channel"
+        },
+        {
+          "name": "Google DeepMind",
+          "category": "youtube",
+          "url": "https://www.youtube.com/@GoogleDeepMind",
+          "source_kind": "youtube_channel"
+        },
+        {
+          "name": "Hugging Face",
+          "category": "youtube",
+          "url": "https://www.youtube.com/@HuggingFace",
+          "source_kind": "youtube_channel"
+        }
+      ],
+      "github_sources": [
+        {
+          "name": "OpenAI Agents SDK",
+          "category": "github",
+          "repo": "openai/openai-agents-python",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "MCP Servers",
+          "category": "github",
+          "repo": "modelcontextprotocol/servers",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "OPC Skills",
+          "category": "github",
+          "repo": "ReScienceLab/opc-skills",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "OpenClaw",
+          "category": "github",
+          "repo": "openclaw/openclaw",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "AutoGen",
+          "category": "github",
+          "repo": "microsoft/autogen",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "LangGraph",
+          "category": "github",
+          "repo": "langchain-ai/langgraph",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "CrewAI",
+          "category": "github",
+          "repo": "crewAIInc/crewAI",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "browser-use",
+          "category": "github",
+          "repo": "browser-use/browser-use",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "vLLM",
+          "category": "github",
+          "repo": "vllm-project/vllm",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "Transformers",
+          "category": "github",
+          "repo": "huggingface/transformers",
+          "mode": "releases",
+          "source_kind": "github_release"
+        },
+        {
+          "name": "Dify",
+          "category": "github",
+          "repo": "langgenius/dify",
+          "mode": "releases",
+          "source_kind": "github_release"
+        }
+      ],
+      "x_accounts": [
+        {
+          "name": "OpenAI",
+          "category": "x",
+          "handle": "OpenAI",
+          "source_kind": "x_allowlist"
+        },
+        {
+          "name": "Anthropic",
+          "category": "x",
+          "handle": "AnthropicAI",
+          "source_kind": "x_allowlist"
+        },
+        {
+          "name": "Google DeepMind",
+          "category": "x",
+          "handle": "GoogleDeepMind",
+          "source_kind": "x_allowlist"
+        },
+        {
+          "name": "Hugging Face",
+          "category": "x",
+          "handle": "huggingface",
+          "source_kind": "x_allowlist"
+        },
+        {
+          "name": "Sam Altman",
+          "category": "x",
+          "handle": "sama",
+          "source_kind": "x_allowlist"
+        },
+        {
+          "name": "Andrej Karpathy",
+          "category": "x",
+          "handle": "karpathy",
+          "source_kind": "x_allowlist"
+        },
+        {
+          "name": "Harrison Chase",
+          "category": "x",
+          "handle": "hwchase17",
+          "source_kind": "x_allowlist"
+        }
+      ],
+      "x_strategy": {
+        "rotation_enabled": true,
+        "max_accounts_per_run": 3,
+        "delay_seconds": 1.2
+      },
+      "trendradar_bridge": {
+        "enabled": true,
+        "repo_path": "D:/Agent/external/TrendRadar",
+        "timeout_seconds": 180,
+        "min_refresh_minutes": 45,
+        "limit": 12,
+        "max_rank": 15,
+        "headline_rank_threshold": 5,
+        "topic_groups": [
+          {
+            "name": "AI 通用",
+            "terms": [
+              "ai",
+              "artificial intelligence",
+              "人工智能",
+              "大模型",
+              "语言模型",
+              "多模态",
+              "生成式 ai",
+              "智能体",
+              "agent",
+              "agentic",
+              "llm",
+              "mcp"
+            ]
+          },
+          {
+            "name": "模型与实验室",
+            "terms": [
+              "openai",
+              "chatgpt",
+              "gpt",
+              "claude",
+              "anthropic",
+              "deepseek",
+              "qwen",
+              "gemini",
+              "llama",
+              "grok",
+              "kimi",
+              "glm",
+              "minimax",
+              "hunyuan",
+              "混元",
+              "doubao",
+              "豆包",
+              "mistral",
+              "sora"
+            ]
+          },
+          {
+            "name": "Agent 与工具链",
+            "terms": [
+              "autogen",
+              "langgraph",
+              "crewai",
+              "browser-use",
+              "dify",
+              "copilot",
+              "cursor",
+              "windsurf",
+              "codex",
+              "ai 编程",
+              "coding agent",
+              "developer tool"
+            ]
+          },
+          {
+            "name": "推理与基础设施",
+            "terms": [
+              "vllm",
+              "transformers",
+              "inference",
+              "embedding",
+              "rag",
+              "token",
+              "算力",
+              "推理芯片",
+              "cuda"
+            ]
+          }
+        ],
+        "exclude_terms": []
+      },
+      "product_hunt": {
+        "enabled": true,
+        "count": 18,
+        "target_topics": [
+          "ai agents",
+          "llms",
+          "ai infrastructure",
+          "developer tools",
+          "artificial intelligence",
+          "open source",
+          "api"
+        ],
+        "headline_min_checks": 2,
+        "builder_surface_probe_limit": 8
+      },
+      "github_momentum": {
+        "enabled": true,
+        "min_total_stars": 500,
+        "min_star_delta": 25,
+        "min_star_growth_ratio": 0.03,
+        "min_ratio_absolute_delta": 10,
+        "min_snapshot_hours": 12,
+        "headline_star_delta": 60
+      },
+      "github_trending": {
+        "enabled": true,
+        "count": 6,
+        "since": "daily",
+        "min_stars_today": 120,
+        "headline_stars_today": 300,
+        "keywords": [
+          "ai",
+          "agent",
+          "claude",
+          "gpt",
+          "llm",
+          "mcp",
+          "model",
+          "inference",
+          "rag",
+          "diffusion",
+          "huggingface",
+          "deepseek"
+        ]
+      },
+      "mass_hot_topics": [],
+      "scoring": {
+        "headline_threshold": 11,
+        "top_signal_limit": 8,
+        "mass_hot_limit": 6,
+        "source_weights": {
+          "official": 9,
+          "github": 4,
+          "x": 6,
+          "product_hunt": 5,
+          "trendradar": 5,
+          "reddit": 3,
+          "paper": 2,
+          "youtube": 2,
+          "other": 1
+        },
+        "cross_verify_bonus": 1.5,
+        "fresh_hours_bonus_window": 48,
+        "mass_hot_min_score": 10
+      }
+    }
+  }
+}

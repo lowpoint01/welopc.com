@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "welopc-ai-signal-radar"
+version = "0.1.0"
+description = "WelOPC AI realtime signal radar with official, GitHub, Product Hunt, X, Reddit, YouTube and TrendRadar sources."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "lxml>=5.2",
+  "openpyxl>=3.1",
+  "pandas>=2.2",
+  "playwright>=1.55",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.5",
+]
+
+[project.scripts]
+ecom-research = "ecom_research.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

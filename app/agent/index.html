@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welopc — 面向 Agent 的 OPC 场景包</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css?v=root-logo-20260522">
+</head>
+<body>
+  <canvas id="welopc-starfield" class="welopc-starfield" aria-hidden="true"></canvas>
+  <div class="welopc-vignette" aria-hidden="true"></div>
+  <div class="dynamic-bg"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="/">
+        <img class="nav-logo-icon" src="/assets/welopc-ai-logo-appicon.png" alt="">
+        <span class="nav-brand-copy">
+          <strong>WelOPC</strong>
+          <small>AGENT</small>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a class="nav-chip" href="/">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+            <span>首页</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-chip active" href="#packs">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><path d="m5.6 5.6 2.8 2.8"/><path d="m15.6 15.6 2.8 2.8"/><path d="m18.4 5.6-2.8 2.8"/><path d="m8.4 15.6-2.8 2.8"/></svg>
+            <span>场景包</span>
+            <strong>5</strong>
+          </a>
+        </li>
+        <li>
+          <a class="nav-chip" href="#workflow">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h7"/><path d="M4 18h7"/><path d="M15 6h5"/><path d="M15 18h5"/><path d="M11 6a4 4 0 0 1 4 4v4a4 4 0 0 0 4 4"/></svg>
+            <span>工作流</span>
+            <strong>5</strong>
+          </a>
+        </li>
+        <li>
+          <a class="nav-chip" href="#results">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg>
+            <span>输出结果</span>
+            <strong>3</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        FOR Agent / AGENT USERS
+      </div>
+
+      <h1>
+        装一个包，你的 Agent<br>
+        <span class="gradient-text">立刻多一个岗位</span>
+      </h1>
+
+      <p class="hero-desc">
+        给你的 Agent 安装场景包，接入能上岗的 Agent 员工。<br>
+        把技能、连接器、流程封成 opc-* 包，一键跑通业务逻辑。
+      </p>
+
+      <div class="hero-actions">
+        <a href="#packs" class="btn-primary">查看场景包</a>
+        <a href="#install" class="btn-secondary">先做环境诊断</a>
+      </div>
+
+      <!-- Terminal Window -->
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="terminal-dot r"></div>
+          <div class="terminal-dot y"></div>
+          <div class="terminal-dot g"></div>
+          <div class="terminal-title">bash — opc-installation</div>
+        </div>
+        <div class="terminal-body">
+          <div><span class="terminal-prompt">$</span><span class="terminal-cmd">npx @welopc/cli add opc-selfmedia</span></div>
+          <div class="terminal-output">
+            [+] 正在检测 Agent 项目环境...<br>
+            [+] 写入场景包文件 (skills, workflows, prompts)...<br>
+            [+] 生成 .env 环境变量模板...<br>
+            <span class="terminal-success">✔ 成功接入【自媒体运营】Agent 员工！</span><br>
+            运行 `opc run selfmedia` 开始你的第一项任务。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role Strip -->
+  <div class="role-strip-wrapper">
+    <div class="role-strip">
+      <!-- Group 1 -->
+      <div class="role-item"><span class="role-name">opc-selfmedia</span> <span class="role-desc">自媒体运营 · 选题归档 / 自动草稿 / 发布检查</span></div>
+      <div class="role-item"><span class="role-name">opc-ecommerce</span> <span class="role-desc">电商经营 · 商品台账 / 订单日报 / 售后通知</span></div>
+      <div class="role-item"><span class="role-name">opc-knowledgebiz</span> <span class="role-desc">知识库管家 · 资料整理 / 社群答疑 / 内容分发</span></div>
+      <div class="role-item"><span class="role-name">opc-localbiz</span> <span class="role-desc">本地生活 · 门店信息 / 评价监控 / 线索汇总</span></div>
+      <div class="role-item"><span class="role-name">opc-sales</span> <span class="role-desc">销售助理 · 表单清洗 / 跟进提醒 / CRM回写</span></div>
+      <!-- Group 2 (Duplicate for loop) -->
+      <div class="role-item"><span class="role-name">opc-selfmedia</span> <span class="role-desc">自媒体运营 · 选题归档 / 自动草稿 / 发布检查</span></div>
+      <div class="role-item"><span class="role-name">opc-ecommerce</span> <span class="role-desc">电商经营 · 商品台账 / 订单日报 / 售后通知</span></div>
+      <div class="role-item"><span class="role-name">opc-knowledgebiz</span> <span class="role-desc">知识库管家 · 资料整理 / 社群答疑 / 内容分发</span></div>
+      <div class="role-item"><span class="role-name">opc-localbiz</span> <span class="role-desc">本地生活 · 门店信息 / 评价监控 / 线索汇总</span></div>
+      <div class="role-item"><span class="role-name">opc-sales</span> <span class="role-desc">销售助理 · 表单清洗 / 跟进提醒 / CRM回写</span></div>
+    </div>
+  </div>
+
+  <!-- Packs Section -->
+  <section id="packs" class="section">
+    <div class="container">
+      <div class="section-label">Available Packs</div>
+      <h2 class="section-title">先选岗位，再决定装哪个包</h2>
+      <p class="section-desc">每个场景包都不是零散能力列表，而是一套围绕真实业务组织好的岗位能力。把繁琐的重复工作交给Agent 员工。</p>
+
+      <div class="features-grid">
+        <!-- Pack 1 -->
+        <div class="feature-card">
+          <span class="feature-tag">传播入口</span>
+          <h3>opc-selfmedia</h3>
+          <p>让 Agent 先接手内容运营里最重复、最容易标准化的工作，适合一人公司或小型内容团队。</p>
+          <ul class="feature-list">
+            <li>选题整理与归档</li>
+            <li>素材整理入库</li>
+            <li>生成文案草稿</li>
+            <li>发布前规范检查</li>
+          </ul>
+          <a href="#" class="card-cta">查看这个岗位 →</a>
+        </div>
+
+        <!-- Pack 2 -->
+        <div class="feature-card">
+          <span class="feature-tag">优先变现</span>
+          <h3>opc-ecommerce</h3>
+          <p>把商品、订单、售后和日报流程交给可追踪的Agent 员工，为小型店铺或电商运营减负。</p>
+          <ul class="feature-list">
+            <li>商品信息整理</li>
+            <li>订单汇总处理</li>
+            <li>售后通知提醒</li>
+            <li>活动台账与表格同步</li>
+          </ul>
+          <a href="#" class="card-cta">查看这个岗位 →</a>
+        </div>
+
+        <!-- Pack 3 -->
+        <div class="feature-card">
+          <span class="feature-tag">高复用</span>
+          <h3>opc-knowledgebiz</h3>
+          <p>把知识整理、用户问答和内容分发变成一套能持续运行的工作流。</p>
+          <ul class="feature-list">
+            <li>知识资料自动归档</li>
+            <li>高频问答支持</li>
+            <li>社群内容分发</li>
+            <li>运行数据统计分析</li>
+          </ul>
+          <a href="#" class="card-cta">查看这个岗位 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Employees Table Section -->
+  <section id="platforms" class="section">
+    <div class="container">
+      <div class="section-label">Available Employees</div>
+      <h2 class="section-title">当前可用Agent 员工矩阵</h2>
+      <p class="section-desc">每个场景包都封装了专属的连接器与工作流，不再需要你亲手拼接技能模块，一键接入具备完整业务闭环的岗位助理。</p>
+
+      <div class="platforms-table-wrap">
+        <div class="platform-filters">
+          <button class="platform-filter-btn active">全部岗位 <span class="filter-count">5</span></button>
+          <button class="platform-filter-btn">内容运营</button>
+          <button class="platform-filter-btn">电商经营</button>
+          <button class="platform-filter-btn">商务销售</button>
+        </div>
+        <div class="platforms-table-scroll">
+          <table class="platforms-table">
+            <thead>
+              <tr>
+                <th>场景包代码 (CLI)</th>
+                <th>适合岗位</th>
+                <th>典型工作流与执行能力</th>
+                <th>产出结果物</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="platform-name">opc-selfmedia</div></td>
+                <td><span class="platform-mode mode-public">内容运营</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">选题整理</span> <span class="cmd-tag">素材归档</span> <span class="cmd-tag">文案草稿</span> <span class="cmd-tag">发布检查</span> <span class="cmd-tag">数据复盘</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">选题池 / 素材库 / 草稿 / 复盘表</span></td>
+              </tr>
+              <tr>
+                <td><div class="platform-name">opc-ecommerce</div></td>
+                <td><span class="platform-mode mode-browser">电商经营</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">商品整理</span> <span class="cmd-tag">订单汇总</span> <span class="cmd-tag">售后通知</span> <span class="cmd-tag">活动日报</span> <span class="cmd-tag">表格同步</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">商品台账 / 订单日报 / 售后工单</span></td>
+              </tr>
+              <tr>
+                <td><div class="platform-name">opc-localbiz</div></td>
+                <td><span class="platform-mode mode-browser">本地生活</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">门店信息</span> <span class="cmd-tag">地图处理</span> <span class="cmd-tag">评价监控</span> <span class="cmd-tag">活动提醒</span> <span class="cmd-tag">线索汇总</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">评价监控报表 / 门店线索池</span></td>
+              </tr>
+              <tr>
+                <td><div class="platform-name">opc-knowledgebiz</div></td>
+                <td><span class="platform-mode mode-public">知识社群</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">课程排期</span> <span class="cmd-tag">社群通知</span> <span class="cmd-tag">用户跟进</span> <span class="cmd-tag">内容分发</span> <span class="cmd-tag">数据统计</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">通知下发记录 / 问答知识档案</span></td>
+              </tr>
+              <tr>
+                <td><div class="platform-name">opc-sales</div></td>
+                <td><span class="platform-mode mode-desktop">销售助理</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">表单清洗</span> <span class="cmd-tag">跟进提醒</span> <span class="cmd-tag">线索归档</span> <span class="cmd-tag">日报周报</span> <span class="cmd-tag">CRM回写</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">清洗后客资表 / 销售周报</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section id="workflow" class="section">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">装一段能跑通的工作流</h2>
+      <p class="section-desc">你接入的不是单个功能，而是完整跑通从输入到结果物输出的业务管线。</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4>配置环境</h4>
+          <p>接入账号授权和基础变量</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4>安装场景包</h4>
+          <p>通过 CLI 注入预设包</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4>调用能力</h4>
+          <p>触发 Connector 和 Skills</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h4>跑通任务</h4>
+          <p>AI 执行并校验任务逻辑</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">5</div>
+          <h4>结果回传</h4>
+          <p>发送到飞书、表格或业务系统</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section id="results" class="section">
+    <div class="container">
+      <div class="section-label">Output Artifacts</div>
+      <h2 class="section-title">直接看会产出什么</h2>
+      <p class="section-desc">不用自己拼接能力链路，装上岗位包，直接验收产出结果。</p>
+
+      <div class="result-demo">
+        <div class="result-meta">
+          <h3>内容运营日报生成</h3>
+          <p style="color: var(--text-secondary); margin: 1rem 0;">
+            <strong>输入：</strong> 社交媒体后台数据流<br>
+            <strong>Agent 动作：</strong> 获取数据 -> 对比目标 -> 汇总排版 -> 发送飞书通知<br>
+            <strong>输出结果：</strong> 一份格式统一的飞书日报，直达工作群。
+          </p>
+          <a href="#" class="btn-secondary" style="padding: 0.5rem 1.5rem;">查看更多样例</a>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card-header">
+            <span class="result-card-title">📅 运营岗日报汇总</span>
+            <span class="result-card-date">Today 18:30</span>
+          </div>
+          <div class="result-card-body">
+            <p><strong>[数据概览]</strong><br>今日新增素材：24份<br>已处理文案草稿：5条<br>待审核内容：2条</p>
+            <hr style="margin: 0.8rem 0; border: none; border-top: 1px dashed #ccc;">
+            <p><strong>[异常提醒]</strong><br>⚠️ 有 1 篇推文缺少封面图，请跟进处理。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="install" class="section" style="text-align: center; padding: var(--space-2xl) 0;">
+    <div class="container">
+      <h2 class="section-title">先装上第一个岗位，<br>让你的 Agent 真正开始上班</h2>
+      <p class="section-desc" style="margin: 1.5rem auto;">跑通最小闭环，验证结果物，零维护焦虑。</p>
+      <div style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="#packs" class="btn-primary">查看全部场景包</a>
+        <div class="terminal" style="margin: 0; min-width: 300px; display: inline-block;">
+          <div class="terminal-body" style="padding: 0.85rem 1.5rem;">
+             <span class="terminal-prompt">></span> <span class="terminal-cmd">npx @welopc/cli list</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 welopc.com - 面向 Agent 的场景包平台</div>
+      <div style="display: flex; gap: 1rem;">
+        <a href="#">文档</a>
+        <a href="#">GitHub</a>
+        <a href="#">支持</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="starfield-root.js?v=root-starfield-20260522" defer></script>
+</body>
+</html>

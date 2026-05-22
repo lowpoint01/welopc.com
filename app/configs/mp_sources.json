@@ -1,0 +1,19 @@
+{
+  "description": "公众号爆文模块动态配置。只允许真实 RSS/JSON/API 或自有采集器输出，不允许放公开页面样本文章。",
+  "schema": {
+    "type": "rss | json",
+    "name": "公众号或榜单名称",
+    "url": "文章链接",
+    "title": "文章标题",
+    "accountName": "公众号名称",
+    "publishedAt": "发布时间 ISO8601",
+    "summary": "摘要",
+    "heatScore": "热度分",
+    "anomalyScore": "异常传播分",
+    "aiRelevanceScore": "AI 相关度",
+    "tags": [
+      "标签"
+    ]
+  },
+  "sources": []
+}

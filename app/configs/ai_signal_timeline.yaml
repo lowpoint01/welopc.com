@@ -1,0 +1,51 @@
+preset: live_pulse
+timezone: Asia/Shanghai
+site:
+  title: AI Signal Radar
+  subtitle: 每 30 分钟刷新一次的实时 AI 热点、开源增长与社区证据流
+  output_dir: site/ai-signal-live
+  history_limit: 72
+  refresh_interval_minutes: 30
+presets:
+  live_pulse:
+    name: AI 实时热点雷达
+    description: 全天候刷新网站数据；默认不推送飞书日报。
+    default:
+      enabled: true
+      limit_per_source: 3
+      max_items: 36
+      since_days: 1
+      export_site: true
+      publish_feishu: false
+      once:
+        run_digest: false
+        publish_feishu: false
+        export_site: false
+    periods:
+      live_monitor:
+        name: 实时雷达
+        start: "00:00"
+        end: "23:59"
+        enabled: true
+        limit_per_source: 3
+        max_items: 36
+        since_days: 1
+        export_site: true
+        publish_feishu: false
+    day_plans:
+      weekday:
+        periods:
+          - live_monitor
+      weekend:
+        periods:
+          - live_monitor
+    week_map:
+      1: weekday
+      2: weekday
+      3: weekday
+      4: weekday
+      5: weekday
+      6: weekend
+      7: weekend
+    overlap:
+      policy: error_on_overlap

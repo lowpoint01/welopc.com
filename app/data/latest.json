@@ -1,0 +1,1164 @@
+{
+  "generated_at": "2026-05-22T08:10:05.918363+08:00",
+  "timezone": "Asia/Shanghai",
+  "refresh": {
+    "mode": "systemd_timer",
+    "interval_minutes": 30,
+    "interval_seconds": 1800,
+    "last_updated_at": "2026-05-22T08:10:05.918363+08:00",
+    "next_update_at": "2026-05-22T08:40:05.918363+08:00",
+    "label": "每 30 分钟"
+  },
+  "site": {
+    "title": "AI Signal Radar",
+    "subtitle": "每 30 分钟刷新一次的实时 AI 热点、开源增长与社区证据流",
+    "doc_url": ""
+  },
+  "schedule": {
+    "preset": "live_pulse",
+    "preset_name": "AI 实时热点雷达",
+    "period_key": "live_monitor",
+    "period_name": "实时雷达",
+    "publish_feishu": false,
+    "export_site": true
+  },
+  "report": {
+    "date": "2026-05-22",
+    "title": "AI 每日信号 - 2026-05-22",
+    "report_path": "/opt/welopc-ai-signal-radar/reports/generated/daily/ai_daily_signal_20260522.md",
+    "item_count": 41,
+    "top_signal_count": 8,
+    "mass_hot_topic_count": 1
+  },
+  "mass_hot_topics": [
+    {
+      "name": "Codex",
+      "score": 17.7,
+      "one_liner": "Codex 是今天值得优先看的模型/模型版本，因为它已经在 GitHub, 社区 出现可验证信号。",
+      "what_it_is": "Codex 是今天进入热点池的模型/模型版本。 核心信息是：今日新增 4294 stars; 总 stars 13407; 共 763 个 forks; TypeScript; 项目说明：Pre-indexed code knowledge graph for Claude Code, Codex…",
+      "why_hot_today": "今天它变热，主要因为多渠道共振：社区；6 independent source reports；2 channels aligned；命中发布、预览或上线语义。",
+      "who_it_matters_to": "对模型选型、应用开发、Agent 工作流团队和技术负责人最重要。",
+      "categories": [
+        "GitHub",
+        "社区"
+      ],
+      "reasons": [
+        "broad-channel resonance: reddit",
+        "6 independent source reports",
+        "2 channels aligned",
+        "launch / preview / release wording"
+      ],
+      "story_count": 6,
+      "source_report_count": 6,
+      "channel_count": 2,
+      "support_sources": [
+        "GitHub Trending AI",
+        "OpenAI",
+        "Reddit / r/ChatGPT",
+        "Reddit / r/LocalLLaMA"
+      ],
+      "dynamic_topic": true,
+      "video_titles": [],
+      "top_items": [
+        {
+          "title": "colbymchenry/codegraph GitHub 今日热榜",
+          "source_name": "GitHub Trending AI",
+          "link": "https://github.com/colbymchenry/codegraph"
+        },
+        {
+          "title": "Qwen3.6 35Ba3 has changed my workflows and even how I use my computer",
+          "source_name": "Reddit / r/LocalLLaMA",
+          "link": "https://reddit.com/r/LocalLLaMA/comments/1tjwrp7/qwen36_35ba3_has_changed_my_workflows_and_even"
+        },
+        {
+          "title": "this tweet aged in the funniest possible way",
+          "source_name": "Reddit / r/ChatGPT",
+          "link": "https://reddit.com/r/ChatGPT/comments/1tjlpz6/this_tweet_aged_in_the_funniest_possible_way"
+        }
+      ]
+    }
+  ],
+  "top_signals": [
+    {
+      "title": "obra/superpowers GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.605953+00:00",
+      "observed_at": "2026-05-22T00:18:58.605953+00:00",
+      "link": "https://github.com/obra/superpowers",
+      "summary": "今日新增 1576 stars; 总 stars 201485; 共 17948 个 forks; Shell; 项目说明：An agentic skills framework & software development methodology that works.",
+      "signal_score": 13.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "multica-ai/andrej-karpathy-skills GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.601967+00:00",
+      "observed_at": "2026-05-22T00:18:58.601967+00:00",
+      "link": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "summary": "今日新增 2614 stars; 总 stars 143126; 共 14673 个 forks; 项目说明：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "signal_score": 13.5,
+      "cross_verification_channels": [
+        "社区"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "colbymchenry/codegraph GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.599865+00:00",
+      "observed_at": "2026-05-22T00:18:58.599865+00:00",
+      "link": "https://github.com/colbymchenry/codegraph",
+      "summary": "今日新增 4294 stars; 总 stars 13407; 共 763 个 forks; TypeScript; 项目说明：Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
+      "signal_score": 13.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Datasette Agent",
+      "source_name": "Simon Willison ??",
+      "category": "官方",
+      "published": "2026-05-21T19:52:19+00:00",
+      "observed_at": "",
+      "link": "https://simonwillison.net/2026/May/21/datasette-agent",
+      "summary": "We just announced the first release of Datasette Agent , a new extensible AI assistant for Datasette. I've been working on my LLM Python library for just over three years now, and Datasette Agent represents the moment that LLM and Datasette finally come together. I'm really excited about it! Datasette Agent provides a conversational interface for asking questions of the data you have stored in Dat",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+      "source_name": "Google DeepMind Blog",
+      "category": "官方",
+      "published": "Thu, 21 May 2026 19:46:42 +0000",
+      "observed_at": "",
+      "link": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks",
+      "summary": "",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "datasette-agent-sprites 0.1a0",
+      "source_name": "Simon Willison ??",
+      "category": "官方",
+      "published": "2026-05-21T18:21:07+00:00",
+      "observed_at": "",
+      "link": "https://simonwillison.net/2026/May/21/datasette-agent-sprites",
+      "summary": "Release: datasette-agent-sprites 0.1a0 A Datasette Agent plugin for running commands in a Fly Sprites sandbox. Tags: sandboxing , datasette , fly , datasette-agent",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "HKUDS/CLI-Anything GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.607785+00:00",
+      "observed_at": "2026-05-22T00:18:58.607785+00:00",
+      "link": "https://github.com/HKUDS/CLI-Anything",
+      "summary": "今日新增 656 stars; 总 stars 39112; 共 3710 个 forks; Python; 项目说明：\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "signal_score": 12.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "anthropics/claude-plugins-official GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.597731+00:00",
+      "observed_at": "2026-05-22T00:18:58.597731+00:00",
+      "link": "https://github.com/anthropics/claude-plugins-official",
+      "summary": "今日新增 682 stars; 总 stars 22383; 共 2640 个 forks; Python; 项目说明：Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "signal_score": 12.5,
+      "cross_verification_channels": [
+        "社区"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    }
+  ],
+  "x_kol_hotspots": [],
+  "community_hotspots": [
+    {
+      "title": "Share Codex plugins with your team",
+      "source_name": "OpenAI",
+      "category": "视频",
+      "published": "2026-05-21T19:15:18+00:00",
+      "observed_at": "",
+      "link": "https://youtube.com/watch?v=msSa0tc2TbU",
+      "summary": "Teams can now distribute custom plugins, reuse internal tools, and manage what’s available across their workspace. If you have a plugin that's working for you, now its really simple to share it with others right from within the Codex app. Chapters 00:00 Launching plugin sharing in Codex 00:09 Sharing a custom plugin from the directory 00:19 Choosing who can access the plugin 00:39 Finding plugins",
+      "signal_score": 0,
+      "cross_verification_channels": [],
+      "source_kind": "youtube_channel",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Introducing Appshots in Codex",
+      "source_name": "OpenAI",
+      "category": "视频",
+      "published": "2026-05-21T18:33:55+00:00",
+      "observed_at": "",
+      "link": "https://youtube.com/watch?v=QKYbGCvNpFo",
+      "summary": "Appshots are a new way to bring the context of what you’re working on into Codex. On your Mac, press Command-Command to attach your app window to a Codex thread. Codex gets both a screenshot and text from the window, including content beyond what’s visible onscreen. Appshots are available across plans on Mac, with enterprise access coming soon.",
+      "signal_score": 0,
+      "cross_verification_channels": [],
+      "source_kind": "youtube_channel",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)",
+      "source_name": "Reddit / r/ClaudeAI",
+      "category": "社区",
+      "published": "2026-05-21T16:16:09+00:00",
+      "observed_at": "",
+      "link": "https://reddit.com/r/ClaudeAI/comments/1tjpfh8/anthropic_officially_launched_13_free_ai_courses",
+      "summary": "Just found out about this and had to share because almost nobody is talking about it yet. If you are tired of paying for AI courses or getting hit with paywalls just to get a certificate, Anthropic (the creators of Claude) quietly dropped a massive library of completely free, official training modules. Yes, they actually give you an official certificate of completion directly from Anthropic once y",
+      "signal_score": 0,
+      "cross_verification_channels": [],
+      "source_kind": "community_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    }
+  ],
+  "recent_items": [
+    {
+      "title": "obra/superpowers GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.605953+00:00",
+      "observed_at": "2026-05-22T00:18:58.605953+00:00",
+      "link": "https://github.com/obra/superpowers",
+      "summary": "今日新增 1576 stars; 总 stars 201485; 共 17948 个 forks; Shell; 项目说明：An agentic skills framework & software development methodology that works.",
+      "signal_score": 13.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "multica-ai/andrej-karpathy-skills GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.601967+00:00",
+      "observed_at": "2026-05-22T00:18:58.601967+00:00",
+      "link": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "summary": "今日新增 2614 stars; 总 stars 143126; 共 14673 个 forks; 项目说明：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "signal_score": 13.5,
+      "cross_verification_channels": [
+        "社区"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "colbymchenry/codegraph GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.599865+00:00",
+      "observed_at": "2026-05-22T00:18:58.599865+00:00",
+      "link": "https://github.com/colbymchenry/codegraph",
+      "summary": "今日新增 4294 stars; 总 stars 13407; 共 763 个 forks; TypeScript; 项目说明：Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, and OpenCode — fewer tokens, fewer tool calls, 100% local",
+      "signal_score": 13.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "HKUDS/CLI-Anything GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.607785+00:00",
+      "observed_at": "2026-05-22T00:18:58.607785+00:00",
+      "link": "https://github.com/HKUDS/CLI-Anything",
+      "summary": "今日新增 656 stars; 总 stars 39112; 共 3710 个 forks; Python; 项目说明：\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "signal_score": 12.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "anthropics/claude-plugins-official GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.597731+00:00",
+      "observed_at": "2026-05-22T00:18:58.597731+00:00",
+      "link": "https://github.com/anthropics/claude-plugins-official",
+      "summary": "今日新增 682 stars; 总 stars 22383; 共 2640 个 forks; Python; 项目说明：Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "signal_score": 12.5,
+      "cross_verification_channels": [
+        "社区"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "browser-use GitHub momentum",
+      "source_name": "browser-use",
+      "category": "GitHub",
+      "published": "2026-05-22T00:15:46.060098+00:00",
+      "observed_at": "",
+      "link": "https://github.com/browser-use/browser-use",
+      "summary": "stars 增加 3741，达到 95010；forks 增加 313；watchers 增加 3；观测窗口 522.8 小时；较上次快照增长 4.1%",
+      "signal_score": 12.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_momentum",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "OpenClaw GitHub momentum",
+      "source_name": "OpenClaw",
+      "category": "GitHub",
+      "published": "2026-05-22T00:13:40.063129+00:00",
+      "observed_at": "",
+      "link": "https://github.com/openclaw/openclaw",
+      "summary": "stars 增加 452，达到 373760；forks 增加 169；watchers 增加 3；观测窗口 43.0 小时；较上次快照增长 0.12%",
+      "signal_score": 12.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_momentum",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "OpenAI Agents SDK GitHub momentum",
+      "source_name": "OpenAI Agents SDK",
+      "category": "GitHub",
+      "published": "2026-05-22T00:11:35.928500+00:00",
+      "observed_at": "",
+      "link": "https://github.com/openai/openai-agents-python",
+      "summary": "stars 增加 65，达到 26553；forks 增加 13；watchers 增加 2；观测窗口 43.0 小时；较上次快照增长 0.25%",
+      "signal_score": 12.0,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_momentum",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "dotnet/skills GitHub 今日热榜",
+      "source_name": "GitHub Trending AI",
+      "category": "GitHub",
+      "published": "2026-05-22T00:18:58.603796+00:00",
+      "observed_at": "2026-05-22T00:18:58.603796+00:00",
+      "link": "https://github.com/dotnet/skills",
+      "summary": "今日新增 129 stars; 总 stars 2185; 共 177 个 forks; C#; 项目说明：Repository for skills to assist AI coding agents with .NET and C#",
+      "signal_score": 11.5,
+      "cross_verification_channels": [
+        "官方"
+      ],
+      "source_kind": "github_trending",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Datasette Agent",
+      "source_name": "Simon Willison ??",
+      "category": "官方",
+      "published": "2026-05-21T19:52:19+00:00",
+      "observed_at": "",
+      "link": "https://simonwillison.net/2026/May/21/datasette-agent",
+      "summary": "We just announced the first release of Datasette Agent , a new extensible AI assistant for Datasette. I've been working on my LLM Python library for just over three years now, and Datasette Agent represents the moment that LLM and Datasette finally come together. I'm really excited about it! Datasette Agent provides a conversational interface for asking questions of the data you have stored in Dat",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+      "source_name": "Google DeepMind Blog",
+      "category": "官方",
+      "published": "Thu, 21 May 2026 19:46:42 +0000",
+      "observed_at": "",
+      "link": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks",
+      "summary": "",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "datasette-agent-sprites 0.1a0",
+      "source_name": "Simon Willison ??",
+      "category": "官方",
+      "published": "2026-05-21T18:21:07+00:00",
+      "observed_at": "",
+      "link": "https://simonwillison.net/2026/May/21/datasette-agent-sprites",
+      "summary": "Release: datasette-agent-sprites 0.1a0 A Datasette Agent plugin for running commands in a Fly Sprites sandbox. Tags: sandboxing , datasette , fly , datasette-agent",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Beyond the engine: 10 open source projects shaping how games actually get made",
+      "source_name": "GitHub Blog",
+      "category": "官方",
+      "published": "Thu, 21 May 2026 18:00:00 +0000",
+      "observed_at": "",
+      "link": "https://github.blog/open-source/gaming/beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made",
+      "summary": "Check out these 10 open source tools that help game developers create art, animation, levels, audio, dialogue, debug UIs, and engine-ready assets. The post Beyond the engine: 10 open source projects shaping how games actually get made appeared first on The GitHub Blog .",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Building GitHub’s next chapter in accessibility",
+      "source_name": "GitHub Blog",
+      "category": "官方",
+      "published": "Thu, 21 May 2026 16:00:00 +0000",
+      "observed_at": "",
+      "link": "https://github.blog/open-source/building-githubs-next-chapter-in-accessibility",
+      "summary": "Explore our update on GitHub’s accessibility strategy, and learn how you can join us in building a culture of accessibility. The post Building GitHub’s next chapter in accessibility appeared first on The GitHub Blog .",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "datasette-agent-charts 0.1a2",
+      "source_name": "Simon Willison ??",
+      "category": "官方",
+      "published": "2026-05-21T15:15:58+00:00",
+      "observed_at": "",
+      "link": "https://simonwillison.net/2026/May/21/datasette-agent-charts",
+      "summary": "Release: datasette-agent-charts 0.1a2 \"View SQL query\" buttons below rendered charts. Tags: datasette , datasette-agent",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Apple TV to air first major live pro sports event shot on iPhone 17 Pro",
+      "source_name": "Apple Newsroom",
+      "category": "官方",
+      "published": "2026-05-21T13:59:27.458Z",
+      "observed_at": "",
+      "link": "https://apple.com/newsroom/2026/05/apple-tv-to-air-first-major-live-pro-sports-event-shot-on-iphone-17-pro",
+      "summary": "On May 23, Apple TV presents a special MLS match captured on iPhone 17 Pro — a first for a major professional live sports event.",
+      "signal_score": 11.5,
+      "cross_verification_channels": [],
+      "source_kind": "official_feed",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Claude Code?GitHub Releases v2.1.147",
+      "source_name": "Claude Code?GitHub Releases",
+      "category": "GitHub",
+      "published": "2026-05-21T20:39:22Z",
+      "observed_at": "",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "summary": "## What's changed - Pinned background sessions (`Ctrl+T` in `claude agents`) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only after non-pinned sessions - Renamed `/simplify` to `/code-review`. It now reports correctness bugs at a chosen effort level (e.g., `/code-review high`); pass `--comment` to post findings as inline GitHub",
+      "signal_score": 10.0,
+      "cross_verification_channels": [
+        "官方",
+        "社区"
+      ],
+      "source_kind": "github_release",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    },
+    {
+      "title": "Claude Code?GitHub Releases v2.1.146",
+      "source_name": "Claude Code?GitHub Releases",
+      "category": "GitHub",
+      "published": "2026-05-21T01:51:52Z",
+      "observed_at": "",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.146",
+      "summary": "## What's changed - Renamed `/simplify` to `/code-review` with an optional effort level (e.g. `/code-review high`) - Auto mode no longer suppresses `AskUserQuestion` when the user or a skill explicitly relies on it - Fixed Windows PowerShell tool failing with \"command line is invalid\" when `pwsh` is installed via winget or the Microsoft Store (regression in v2.1.124) - Fixed MCP `resources/list`,",
+      "signal_score": 10.0,
+      "cross_verification_channels": [
+        "官方",
+        "社区"
+      ],
+      "source_kind": "github_release",
+      "trendradar_platform": "",
+      "trendradar_rank": 0
+    }
+  ],
+  "source_health": [
+    {
+      "group": "official_feeds",
+      "name": "OpenAI News",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 1272
+    },
+    {
+      "group": "official_feeds",
+      "name": "OpenAI Blog",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 1511
+    },
+    {
+      "group": "official_feeds",
+      "name": "Google AI Blog",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2142
+    },
+    {
+      "group": "official_feeds",
+      "name": "Google DeepMind Blog",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 1485
+    },
+    {
+      "group": "official_feeds",
+      "name": "Hugging Face Blog",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 981
+    },
+    {
+      "group": "official_feeds",
+      "name": "Anthropic Newsroom",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 5752
+    },
+    {
+      "group": "official_feeds",
+      "name": "DeepSeek",
+      "status": "ok",
+      "count": 1,
+      "detail": "",
+      "elapsed_ms": 914
+    },
+    {
+      "group": "official_feeds",
+      "name": "Qwen / Hugging Face",
+      "status": "ok",
+      "count": 1,
+      "detail": "",
+      "elapsed_ms": 1446
+    },
+    {
+      "group": "official_feeds",
+      "name": "Tencent HY",
+      "status": "ok",
+      "count": 1,
+      "detail": "",
+      "elapsed_ms": 1366
+    },
+    {
+      "group": "official_feeds",
+      "name": "IT???RSS?",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 5114
+    },
+    {
+      "group": "official_feeds",
+      "name": "GitHub Blog",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 386
+    },
+    {
+      "group": "official_feeds",
+      "name": "Apple Machine Learning Research",
+      "status": "error",
+      "count": 0,
+      "detail": "not well-formed (invalid token): line 29, column 66",
+      "elapsed_ms": 693
+    },
+    {
+      "group": "official_feeds",
+      "name": "Apple Newsroom",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 783
+    },
+    {
+      "group": "official_feeds",
+      "name": "Simon Willison ??",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 288
+    },
+    {
+      "group": "official_feeds",
+      "name": "Gary Marcus?The Road to AI We Can Trust",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 480
+    },
+    {
+      "group": "official_feeds",
+      "name": "Tomer Tunguz ??",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 263
+    },
+    {
+      "group": "official_feeds",
+      "name": "Nathan Lambert?Interconnects",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 631
+    },
+    {
+      "group": "official_feeds",
+      "name": "Hacker News ???HN RSS?",
+      "status": "ok",
+      "count": 0,
+      "detail": "",
+      "elapsed_ms": 1025
+    },
+    {
+      "group": "official_feeds",
+      "name": "xAI?News",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 785
+    },
+    {
+      "group": "official_feeds",
+      "name": "NVIDIA AI Blog",
+      "status": "ok",
+      "count": 0,
+      "detail": "",
+      "elapsed_ms": 620
+    },
+    {
+      "group": "official_feeds",
+      "name": "Claude?Blog",
+      "status": "ok",
+      "count": 0,
+      "detail": "",
+      "elapsed_ms": 2200
+    },
+    {
+      "group": "official_feeds",
+      "name": "Cursor Blog",
+      "status": "ok",
+      "count": 0,
+      "detail": "",
+      "elapsed_ms": 925
+    },
+    {
+      "group": "official_feeds",
+      "name": "Anthropic Transformer Circuits",
+      "status": "ok",
+      "count": 0,
+      "detail": "",
+      "elapsed_ms": 880
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/LocalLLaMA",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 1903
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/MachineLearning",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2198
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/OpenAI",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2119
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/Anthropic",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2208
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/artificial",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2014
+    },
+    {
+      "group": "community_feeds",
+      "name": "arXiv cs.AI",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2232
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/ChatGPT",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2026
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/ClaudeAI",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2558
+    },
+    {
+      "group": "community_feeds",
+      "name": "Reddit / r/singularity",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 1731
+    },
+    {
+      "group": "youtube_channels",
+      "name": "OpenAI",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 6508
+    },
+    {
+      "group": "youtube_channels",
+      "name": "Anthropic",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 3862
+    },
+    {
+      "group": "youtube_channels",
+      "name": "Google DeepMind",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 7480
+    },
+    {
+      "group": "youtube_channels",
+      "name": "Hugging Face",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 6567
+    },
+    {
+      "group": "youtube_channels",
+      "name": "Two Minute Papers",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 5396
+    },
+    {
+      "group": "youtube_channels",
+      "name": "AI Explained",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 4189
+    },
+    {
+      "group": "youtube_channels",
+      "name": "Matthew Berman",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 3764
+    },
+    {
+      "group": "github_sources",
+      "name": "OpenAI Agents SDK",
+      "status": "ok",
+      "count": 2,
+      "detail": "",
+      "elapsed_ms": 1972
+    },
+    {
+      "group": "github_sources",
+      "name": "MCP Servers",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 60233
+    },
+    {
+      "group": "github_sources",
+      "name": "OPC Skills",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 61554
+    },
+    {
+      "group": "github_sources",
+      "name": "OpenClaw",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2444
+    },
+    {
+      "group": "github_sources",
+      "name": "AutoGen",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 60950
+    },
+    {
+      "group": "github_sources",
+      "name": "LangGraph",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 60957
+    },
+    {
+      "group": "github_sources",
+      "name": "CrewAI",
+      "status": "ok",
+      "count": 2,
+      "detail": "",
+      "elapsed_ms": 2000
+    },
+    {
+      "group": "github_sources",
+      "name": "browser-use",
+      "status": "ok",
+      "count": 2,
+      "detail": "",
+      "elapsed_ms": 2027
+    },
+    {
+      "group": "github_sources",
+      "name": "vLLM",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 60182
+    },
+    {
+      "group": "github_sources",
+      "name": "Transformers",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 60238
+    },
+    {
+      "group": "github_sources",
+      "name": "Dify",
+      "status": "ok",
+      "count": 1,
+      "detail": "",
+      "elapsed_ms": 2317
+    },
+    {
+      "group": "github_sources",
+      "name": "Claude Code?GitHub Releases",
+      "status": "ok",
+      "count": 3,
+      "detail": "",
+      "elapsed_ms": 2123
+    },
+    {
+      "group": "github_sources",
+      "name": "OpenAI Codex",
+      "status": "error",
+      "count": 0,
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 60234
+    },
+    {
+      "group": "github_sources",
+      "name": "OpenAI Open Models",
+      "status": "ok",
+      "count": 0,
+      "detail": "",
+      "elapsed_ms": 1961
+    },
+    {
+      "group": "x_accounts",
+      "name": "Mistral AI",
+      "status": "skipped",
+      "count": 0,
+      "detail": "X allowlist requires TWITTERAPI_API_KEY or TWITTERAPI_IO_KEY.",
+      "elapsed_ms": 0
+    },
+    {
+      "group": "x_accounts",
+      "name": "Perplexity",
+      "status": "skipped",
+      "count": 0,
+      "detail": "X allowlist requires TWITTERAPI_API_KEY or TWITTERAPI_IO_KEY.",
+      "elapsed_ms": 0
+    },
+    {
+      "group": "x_accounts",
+      "name": "Cohere",
+      "status": "skipped",
+      "count": 0,
+      "detail": "X allowlist requires TWITTERAPI_API_KEY or TWITTERAPI_IO_KEY.",
+      "elapsed_ms": 0
+    },
+    {
+      "group": "trendradar",
+      "name": "TrendRadar AI bridge",
+      "status": "error",
+      "count": 0,
+      "detail": "TrendRadar repo not found: D:/Agent/external/TrendRadar",
+      "elapsed_ms": 0
+    },
+    {
+      "group": "github_trending",
+      "name": "GitHub Trending AI",
+      "status": "ok",
+      "count": 6,
+      "detail": "",
+      "elapsed_ms": 2369
+    },
+    {
+      "group": "product_hunt",
+      "name": "Product Hunt",
+      "status": "skipped",
+      "count": 0,
+      "detail": "Product Hunt requires PRODUCT_HUNT_TOKEN, PH_ACCESS_TOKEN, or PRODUCT_HUNT_API_KEY/PRODUCT_HUNT_API_SECRET.",
+      "elapsed_ms": 0
+    }
+  ],
+  "history": [
+    {
+      "generated_at": "2026-05-22T08:10:05.918363+08:00",
+      "period_name": "实时雷达",
+      "headline": "Codex",
+      "headline_kind": "cluster",
+      "item_count": 41,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T17:09:54.630388+08:00",
+      "period_name": "实时雷达",
+      "headline": "Transformers GitHub momentum",
+      "headline_kind": "signal",
+      "item_count": 39,
+      "top_signal_count": 4
+    },
+    {
+      "generated_at": "2026-05-21T16:49:25.492995+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 40,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T16:11:49.204041+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 40,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T15:41:47.202651+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 39,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T15:11:45.156748+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 39,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T14:41:38.151987+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T14:11:36.117243+08:00",
+      "period_name": "实时雷达",
+      "headline": "Transformers GitHub momentum",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 3
+    },
+    {
+      "generated_at": "2026-05-21T13:41:29.062267+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T13:11:23.190241+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T12:41:17.954753+08:00",
+      "period_name": "实时雷达",
+      "headline": "Transformers GitHub momentum",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 4
+    },
+    {
+      "generated_at": "2026-05-21T12:11:15.915610+08:00",
+      "period_name": "实时雷达",
+      "headline": "Transformers GitHub momentum",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 4
+    },
+    {
+      "generated_at": "2026-05-21T11:41:13.203136+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T11:11:11.894446+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T10:41:10.797887+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T10:11:08.751045+08:00",
+      "period_name": "实时雷达",
+      "headline": "Transformers GitHub momentum",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 4
+    },
+    {
+      "generated_at": "2026-05-21T09:41:07.733507+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T09:11:05.649643+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T08:41:03.642861+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    },
+    {
+      "generated_at": "2026-05-21T08:11:01.601108+08:00",
+      "period_name": "实时雷达",
+      "headline": "Imbad0202/academic-research-skills GitHub 今日热榜",
+      "headline_kind": "signal",
+      "item_count": 37,
+      "top_signal_count": 8
+    }
+  ]
+}
