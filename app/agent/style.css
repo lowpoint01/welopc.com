@@ -520,17 +520,7 @@ button {
 }
 
 .platforms-table-wrap::after {
-  content: "";
-  background: linear-gradient(transparent, var(--bg-elevated));
-  pointer-events: none;
-  z-index: 10;
-  border-bottom-left-radius: var(--radius-lg);
-  border-bottom-right-radius: var(--radius-lg);
-  height: 40px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  content: none;
 }
 
 .platform-filters {
@@ -575,23 +565,26 @@ button {
 .filter-count { opacity: 0.7; font-size: 0.6rem; }
 
 .platforms-table-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-  max-height: 480px;
   position: relative;
-  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 .platforms-table {
   border-collapse: collapse;
+  table-layout: fixed;
   width: 100%;
   font-size: 0.85rem;
   text-align: left;
 }
 
+.platform-code-col { width: 19%; }
+.platform-role-col { width: 12%; }
+.platform-flow-col { width: 43%; }
+.platform-output-col { width: 26%; }
+
 .platforms-table thead { background: var(--bg-elevated); }
 .platforms-table th {
-  z-index: 10;
   background: var(--bg-elevated);
   font-family: var(--font-mono);
   letter-spacing: 0.08em;
@@ -601,8 +594,6 @@ button {
   padding: 1rem 1.5rem;
   font-size: 0.75rem;
   font-weight: 600;
-  position: sticky;
-  top: 0;
 }
 
 .platforms-table td {
@@ -613,7 +604,11 @@ button {
 .platforms-table tbody tr:last-child td { border-bottom: none; }
 .platforms-table tbody tr:hover { background: rgba(0, 229, 160, 0.03); }
 
-.platform-name { color: var(--text-primary); font-weight: 600; }
+.platform-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
 
 .platform-mode {
   font-family: var(--font-mono);
@@ -624,6 +619,9 @@ button {
   font-size: 0.65rem;
   font-weight: 600;
   display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  white-space: nowrap;
 }
 .mode-browser { color: #00b4d8; background: rgba(0, 180, 216, 0.12); border: 1px solid rgba(0, 180, 216, 0.2); }
 .mode-desktop { color: #7b61ff; background: rgba(123, 97, 255, 0.12); border: 1px solid rgba(123, 97, 255, 0.2); }
@@ -643,6 +641,7 @@ button {
   padding: 0.15rem 0.5rem;
   font-size: 0.7rem;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 .cmd-tag:hover {
   border-color: var(--border-accent);

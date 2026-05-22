@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css?v=root-logo-20260522">
+  <link rel="stylesheet" href="style.css?v=matrix-restore-20260522">
 </head>
 <body>
   <canvas id="welopc-starfield" class="welopc-starfield" aria-hidden="true"></canvas>
@@ -216,10 +216,15 @@
           <button class="platform-filter-btn">内容运营</button>
           <button class="platform-filter-btn">电商经营</button>
           <button class="platform-filter-btn">商务销售</button>
-          <button class="platform-filter-btn">npm 已发布</button>
         </div>
         <div class="platforms-table-scroll">
           <table class="platforms-table">
+            <colgroup>
+              <col class="platform-code-col">
+              <col class="platform-role-col">
+              <col class="platform-flow-col">
+              <col class="platform-output-col">
+            </colgroup>
             <thead>
               <tr>
                 <th>场景包代码 (CLI)</th>
@@ -260,16 +265,16 @@
                 <td><span style="color:var(--text-secondary);font-size:0.8rem">清洗后客资表 / 销售周报</span></td>
               </tr>
               <tr>
-                <td><div class="platform-name">@ai-welopc/opc-content-factory</div></td>
+                <td><div class="platform-name">opc-content-factory</div></td>
                 <td><span class="platform-mode mode-public">内容工厂</span></td>
-                <td><div class="platform-commands"><span class="cmd-tag">公众号成文</span> <span class="cmd-tag">图片拆解</span> <span class="cmd-tag">Prompt 反推</span> <span class="cmd-tag">草稿准备</span> <span class="cmd-tag">素材复用</span></div></td>
-                <td><span style="color:var(--text-secondary);font-size:0.8rem">文章草稿 / 图片拆解表 / Prompt 模板 / 导入清单</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">公众号成文</span> <span class="cmd-tag">图片拆解</span> <span class="cmd-tag">Prompt反推</span> <span class="cmd-tag">草稿导入</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">文章草稿 / Prompt模板 / 导入清单</span></td>
               </tr>
               <tr>
-                <td><div class="platform-name">@ai-welopc/writing-method-scene-pack</div></td>
+                <td><div class="platform-name">opc-writing-method</div></td>
                 <td><span class="platform-mode mode-desktop">写作方法</span></td>
-                <td><div class="platform-commands"><span class="cmd-tag">AI 选题</span> <span class="cmd-tag">实测记录</span> <span class="cmd-tag">复盘沉淀</span> <span class="cmd-tag">结构提炼</span> <span class="cmd-tag">工作流复用</span></div></td>
-                <td><span style="color:var(--text-secondary);font-size:0.8rem">写作方法库 / 复盘卡片 / 内容流程 / SOP 模板</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">AI选题</span> <span class="cmd-tag">实测记录</span> <span class="cmd-tag">复盘沉淀</span> <span class="cmd-tag">SOP复用</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">方法库 / 复盘卡片 / SOP模板</span></td>
               </tr>
             </tbody>
           </table>
