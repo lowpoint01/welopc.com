@@ -38,14 +38,14 @@
           <a class="nav-chip active" href="#packs">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><path d="m5.6 5.6 2.8 2.8"/><path d="m15.6 15.6 2.8 2.8"/><path d="m18.4 5.6-2.8 2.8"/><path d="m8.4 15.6-2.8 2.8"/></svg>
             <span>场景包</span>
-            <strong>5</strong>
+            <strong>7</strong>
           </a>
         </li>
         <li>
           <a class="nav-chip" href="#workflow">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h7"/><path d="M4 18h7"/><path d="M15 6h5"/><path d="M15 18h5"/><path d="M11 6a4 4 0 0 1 4 4v4a4 4 0 0 0 4 4"/></svg>
             <span>工作流</span>
-            <strong>5</strong>
+            <strong>7</strong>
           </a>
         </li>
         <li>
@@ -91,7 +91,7 @@
           <div class="terminal-title">bash — opc-installation</div>
         </div>
         <div class="terminal-body">
-          <div><span class="terminal-prompt">$</span><span class="terminal-cmd">npx @welopc/cli add opc-selfmedia</span></div>
+          <div><span class="terminal-prompt">$</span><span class="terminal-cmd">npx @ai-welopc/cli add @ai-welopc/opc-content-factory</span></div>
           <div class="terminal-output">
             [+] 正在检测 Agent 项目环境...<br>
             [+] 写入场景包文件 (skills, workflows, prompts)...<br>
@@ -113,12 +113,16 @@
       <div class="role-item"><span class="role-name">opc-knowledgebiz</span> <span class="role-desc">知识库管家 · 资料整理 / 社群答疑 / 内容分发</span></div>
       <div class="role-item"><span class="role-name">opc-localbiz</span> <span class="role-desc">本地生活 · 门店信息 / 评价监控 / 线索汇总</span></div>
       <div class="role-item"><span class="role-name">opc-sales</span> <span class="role-desc">销售助理 · 表单清洗 / 跟进提醒 / CRM回写</span></div>
+      <div class="role-item"><span class="role-name">@ai-welopc/opc-content-factory</span> <span class="role-desc">内容工厂 · 公众号成文 / 图片拆解 / 草稿导入</span></div>
+      <div class="role-item"><span class="role-name">@ai-welopc/writing-method-scene-pack</span> <span class="role-desc">写作方法库 · 选题复盘 / 方法沉淀 / 工作流复用</span></div>
       <!-- Group 2 (Duplicate for loop) -->
       <div class="role-item"><span class="role-name">opc-selfmedia</span> <span class="role-desc">自媒体运营 · 选题归档 / 自动草稿 / 发布检查</span></div>
       <div class="role-item"><span class="role-name">opc-ecommerce</span> <span class="role-desc">电商经营 · 商品台账 / 订单日报 / 售后通知</span></div>
       <div class="role-item"><span class="role-name">opc-knowledgebiz</span> <span class="role-desc">知识库管家 · 资料整理 / 社群答疑 / 内容分发</span></div>
       <div class="role-item"><span class="role-name">opc-localbiz</span> <span class="role-desc">本地生活 · 门店信息 / 评价监控 / 线索汇总</span></div>
       <div class="role-item"><span class="role-name">opc-sales</span> <span class="role-desc">销售助理 · 表单清洗 / 跟进提醒 / CRM回写</span></div>
+      <div class="role-item"><span class="role-name">@ai-welopc/opc-content-factory</span> <span class="role-desc">内容工厂 · 公众号成文 / 图片拆解 / 草稿导入</span></div>
+      <div class="role-item"><span class="role-name">@ai-welopc/writing-method-scene-pack</span> <span class="role-desc">写作方法库 · 选题复盘 / 方法沉淀 / 工作流复用</span></div>
     </div>
   </div>
 
@@ -171,6 +175,30 @@
           </ul>
           <a href="#" class="card-cta">查看这个岗位 →</a>
         </div>
+        <div class="feature-card">
+          <span class="feature-tag">npm 已发布</span>
+          <h3>@ai-welopc/opc-content-factory</h3>
+          <p>面向公众号与内容生产，把选题、图片拆解、提示词反推、草稿准备封装成内容工厂场景包。</p>
+          <ul class="feature-list">
+            <li>公众号文章生产</li>
+            <li>图片信息拆解</li>
+            <li>Prompt 反向工程</li>
+            <li>草稿导入准备</li>
+          </ul>
+          <a href="https://www.npmjs.com/package/@ai-welopc/opc-content-factory" class="card-cta">查看 npm 包 →</a>
+        </div>
+        <div class="feature-card">
+          <span class="feature-tag">npm 已发布</span>
+          <h3>@ai-welopc/writing-method-scene-pack</h3>
+          <p>把 AI 选题、实测记录、复盘方法和写作流程整理成可复用的业务工作流。</p>
+          <ul class="feature-list">
+            <li>AI 选题整理</li>
+            <li>实测记录归档</li>
+            <li>写作方法沉淀</li>
+            <li>内容工作流复用</li>
+          </ul>
+          <a href="https://www.npmjs.com/package/@ai-welopc/writing-method-scene-pack" class="card-cta">查看 npm 包 →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -184,10 +212,11 @@
 
       <div class="platforms-table-wrap">
         <div class="platform-filters">
-          <button class="platform-filter-btn active">全部岗位 <span class="filter-count">5</span></button>
+          <button class="platform-filter-btn active">全部岗位 <span class="filter-count">7</span></button>
           <button class="platform-filter-btn">内容运营</button>
           <button class="platform-filter-btn">电商经营</button>
           <button class="platform-filter-btn">商务销售</button>
+          <button class="platform-filter-btn">npm 已发布</button>
         </div>
         <div class="platforms-table-scroll">
           <table class="platforms-table">
@@ -229,6 +258,18 @@
                 <td><span class="platform-mode mode-desktop">销售助理</span></td>
                 <td><div class="platform-commands"><span class="cmd-tag">表单清洗</span> <span class="cmd-tag">跟进提醒</span> <span class="cmd-tag">线索归档</span> <span class="cmd-tag">日报周报</span> <span class="cmd-tag">CRM回写</span></div></td>
                 <td><span style="color:var(--text-secondary);font-size:0.8rem">清洗后客资表 / 销售周报</span></td>
+              </tr>
+              <tr>
+                <td><div class="platform-name">@ai-welopc/opc-content-factory</div></td>
+                <td><span class="platform-mode mode-public">内容工厂</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">公众号成文</span> <span class="cmd-tag">图片拆解</span> <span class="cmd-tag">Prompt 反推</span> <span class="cmd-tag">草稿准备</span> <span class="cmd-tag">素材复用</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">文章草稿 / 图片拆解表 / Prompt 模板 / 导入清单</span></td>
+              </tr>
+              <tr>
+                <td><div class="platform-name">@ai-welopc/writing-method-scene-pack</div></td>
+                <td><span class="platform-mode mode-desktop">写作方法</span></td>
+                <td><div class="platform-commands"><span class="cmd-tag">AI 选题</span> <span class="cmd-tag">实测记录</span> <span class="cmd-tag">复盘沉淀</span> <span class="cmd-tag">结构提炼</span> <span class="cmd-tag">工作流复用</span></div></td>
+                <td><span style="color:var(--text-secondary);font-size:0.8rem">写作方法库 / 复盘卡片 / 内容流程 / SOP 模板</span></td>
               </tr>
             </tbody>
           </table>
@@ -316,7 +357,7 @@
         <a href="#packs" class="btn-primary">查看全部场景包</a>
         <div class="terminal" style="margin: 0; min-width: 300px; display: inline-block;">
           <div class="terminal-body" style="padding: 0.85rem 1.5rem;">
-             <span class="terminal-prompt">></span> <span class="terminal-cmd">npx @welopc/cli list</span>
+             <span class="terminal-prompt">></span> <span class="terminal-cmd">npx @ai-welopc/cli list</span>
           </div>
         </div>
       </div>
